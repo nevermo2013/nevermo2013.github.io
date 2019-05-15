@@ -62,6 +62,66 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-github发布步骤" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/15/github发布步骤/" class="article-date">
+  <time datetime="2019-05-15T06:47:55.000Z" itemprop="datePublished">2019-05-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/15/github发布步骤/">github发布步骤</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="结合github与hexo搭建个人博客"><a href="#结合github与hexo搭建个人博客" class="headerlink" title="结合github与hexo搭建个人博客"></a>结合github与hexo搭建个人博客</h2><h3 id="本地配置"><a href="#本地配置" class="headerlink" title="本地配置"></a>本地配置</h3><ul>
+<li>在github创建仓库 名称为 username.github.io</li>
+<li>在本地安装hexo-cli<ul>
+<li>npm install hexo-cli -g  </li>
+<li>在文件夹 hexo init blog(文件夹名称自己写,不能用中文)</li>
+<li>进入blog文件 hexo server (在本地发布预览)</li>
+<li>访问 localhost:4000 即可预览</li>
+</ul>
+</li>
+<li>在blog文件cmd 输入 hexo new xxxx<ul>
+<li>在项目的source&gt;_posts目录 会创建xxxx.md文件</li>
+<li>在这个md文件写markdown笔记即可</li>
+</ul>
+</li>
+</ul>
+<h3 id="发布到github"><a href="#发布到github" class="headerlink" title="发布到github"></a>发布到github</h3><ul>
+<li>添加插件 在文件夹 npm install hexo-deployer-git –save</li>
+<li>修改_config.yml配置文件</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: &lt;repository url&gt; #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io</span><br></pre></td></tr></table></figure>
+<ul>
+<li>把xxx.md文件转换为html  hexo g </li>
+<li>把本地的静态文件发布到 github   deploy</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/15/github发布步骤/" data-id="cjvov63qr00007kr1th26osap" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-git常用命令" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/05/15/git常用命令/" class="article-date">
@@ -129,7 +189,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/15/git常用命令/" data-id="cjvouk6zv0002ukr1le4rwx4f" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/15/git常用命令/" data-id="cjvov63qy00017kr1h0p2hb6f" class="article-share-link">Share</a>
       
       
     </footer>
@@ -168,7 +228,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/15/test1/" data-id="cjvouk6zs0001ukr14wyqap91" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/15/test1/" data-id="cjvov63rv00037kr153f6c6hn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -213,7 +273,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/15/hello-world/" data-id="cjvouk6zk0000ukr135b29r4v" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/15/hello-world/" data-id="cjvov63r100027kr1wcbxmc54" class="article-share-link">Share</a>
       
       
     </footer>
@@ -252,6 +312,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/05/15/github发布步骤/">github发布步骤</a>
+          </li>
         
           <li>
             <a href="/2019/05/15/git常用命令/">git常用命令</a>
